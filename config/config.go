@@ -24,7 +24,7 @@ type Config struct {
 	Version string `mapstructure:"version"`
 }
 
-func GetConfig() *Config {
+func Get() *Config {
 	once.Do(func() {
 		viper.SetConfigName(configName)
 		viper.SetConfigType(configType)

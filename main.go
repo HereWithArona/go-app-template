@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	config := config.GetConfig()
+	config := config.Get()
 
 	fmt.Printf("Hello %v!\n", config.Name)
 }
